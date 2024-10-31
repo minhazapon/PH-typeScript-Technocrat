@@ -1,6 +1,5 @@
 {
- ////
-    
+ ////////ts-node-dev --respawn --transpile-only server.ts
    
     let name : string = 'minhazul abedin apon'
 
@@ -9,8 +8,8 @@
     let num : number = 1950374409
     console.log(num)
 
-    let minhazIsMernDeveloper: boolean = true 
-    console.log(minhazIsMernDeveloper)
+    let MinhaZIsMerNDeveloper: boolean = true 
+    console.log(MinhaZIsMerNDeveloper)
 
 
     let A: undefined = undefined 

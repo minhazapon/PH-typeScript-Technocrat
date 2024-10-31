@@ -1,12 +1,12 @@
 "use strict";
 {
-    ////
+    ////////ts-node-dev --respawn --transpile-only server.ts
     let name = 'minhazul abedin apon';
     console.log(name);
     let num = 1950374409;
     console.log(num);
-    let minhazIsMernDeveloper = true;
-    console.log(minhazIsMernDeveloper);
+    let MinhaZIsMerNDeveloper = true;
+    console.log(MinhaZIsMerNDeveloper);
     let A = undefined;
     let B = null;
     console.log(A, B);
