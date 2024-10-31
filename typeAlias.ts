@@ -1,10 +1,8 @@
 {
 
  
-
     type allValue = string | number 
     
-
     const name: allValue = 'minhazul abedin apon';
     const number: allValue = 1950374409 
     const location: allValue = 'bangladesh'
@@ -12,7 +10,6 @@
     const allThik = { name, number, location, id } 
 
     console.log(allThik)
-
 
     function valZ( a: allValue , b: allValue, c: allValue ){
 
