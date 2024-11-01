@@ -231,4 +231,137 @@
     console.log(q, w, r )
 
 
+    //////////////type Alias//////////////////
+
+
+    type allValue = string | number | boolean | null | undefined
+
+
+    const nm : allValue = 1000;
+    const nm2: allValue = 2000;
+    const nm3: allValue = 3000;
+    const nm4: allValue = 4000;
+
+    const allValue = nm + nm2 + nm3 + nm4 
+
+    console.log(allValue)
+
+
+    // function Bo(ns: allValue, ns1: allValue, ns3: allValue ){
+    //    const allVZ = ns + ns1 + ns3
+    //    console.log(allVZ)
+    // }
+    // Bo(20, 30, 40)
+
+
+    ///////////////////union type////////////////////////////
+
+
+    type Banladesh = string | number | boolean 
+
+
+    const B1 = 10;
+    const B2 = 20;
+    const B3 = 30;
+    const allB = B1 * B2 * B3
+    console.log(allB)
+
+
+    type Frontend = {
+
+         skills1: 'js, ts, react, next.js, redux',
+
+    }
+
+    type Backend = {
+
+         skills2: 'js, ts, node, express, mongoose, '
+
+    }
+
+    type FullStack = Frontend & Backend 
+
+
+    const fullStack: FullStack = {
+
+
+        skills1: 'js, ts, react, next.js, redux',
+        skills2: 'js, ts, node, express, mongoose, '
+
+
+    }
+
+    console.log(fullStack.skills1)
+    console.log(fullStack.skills2)
+
+
+    //////////////////////////////ternary operator//////////////////
+
+
+    const aponAge: number = 23 
+
+
+    const isAudlt = aponAge > 20? 'adult': 'not adult' 
+
+    console.log(isAudlt)
+
+
+
+    type UserZ = {
+
+        name: string,
+        skill: string,
+        address:{
+          
+            location: string,
+            district: string,
+            number: number
+        }
+    }
+
+
+    const AllInfo: UserZ = {
+
+        
+         name: 'minhazul abedin apon',
+         skill: 'software development',
+         address:{
+
+            location: 'masterPara jhenaidah',
+            district: 'jheniadah',
+            number: 1950374409
+
+         }
+
+    }
+
+    // const Data = AllInfo.address.country ?? 'country is bangladesh' 
+
+    // console.log(Data)
+
+
+    ////////////////////////never and unknown//////////////////////////////
+
+
+    const SearchName = (value: string | null ) =>{
+        if(value){
+            console.log('Code is run')
+        }else{
+            console.log('code is not running')
+        }
+    }
+    SearchName(null)
+
+
+
+    //////never type///////////////////////////////////
+
+
+    const err = ( name: string ): never =>{
+     throw new Error(name) 
+    }
+    err('code is never run')
+
+
+
 }
