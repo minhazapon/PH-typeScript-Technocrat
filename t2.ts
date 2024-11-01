@@ -189,6 +189,144 @@
 
 
 
+    //////type alias ////// 
+
+
+
+    type allValeZ = string | number | boolean | null | undefined  
+
+
+    const nzz: allValeZ = 50;
+    const nzz1: allValeZ = 100; 
+    const nzz2: allValeZ = 200; 
+    const nzz3: allValeZ = 300;
+
+    const allZZZ = nzz + nzz1 + nzz2 + nzz3 
+
+    console.log(allZZZ)
+
+
+    function AVZ(na: number, nb: number, nc: number){
+
+      const allN = na + nb + nc 
+
+      console.log(allN)
+
+    }
+
+    AVZ(20, 40, 50)
+
+
+
+    ///////////////union type/////////////
+
+
+    type UniType = string | number | boolean 
+
+
+    const all:  UniType = 'bangladesh';
+    const all2: UniType = 'india';
+    const all3: UniType = 'america' 
+    const alls = { all, all2, all3 }
+    console.log(alls)
+
+
+    /////and types/////////////////
+
+
+    type stack = {
+
+       isStack: 'MERN'
+
+    }
+
+    type stack2 = {
+       
+      isStack2: 'backend'
+
+    }
+
+    type allStack = stack & stack2 
+
+    const ASTCK: allStack = {
+
+
+          isStack: 'MERN',
+          isStack2:'backend'
+
+    }
+
+    console.log(ASTCK.isStack)
+    console.log(ASTCK.isStack2) 
+
+
+    /////ternary//////////////
+
+
+    const aGez: number = 20;
+
+
+    const isAdult = aGez > 19? "adult is true": 'adult is not true'
+
+    console.log(isAdult)
+
+
+    type UserZs = {
+
+       name: string,
+       address: {
+         
+         location: string,
+         country: string
+
+       },
+       number: number
+
+    }
+
+
+    const userss: UserZs = {
+
+         name: 'apon',
+         address:{
+
+           location: 'jhenaidah',
+           country: 'bangladesh'
+
+         },
+         number: 1950374409
+
+    } 
+
+   //  const info = userss.address.frutz ?? 'kathal'
+   //  console.log(info)
+
+
+   ///null and never////////////
+
+
+   const nul = (n: string | null) =>{
+       
+      if(n){
+         console.log('code null')
+      } else {
+         console.log('code not null')
+      }
+
+   }
+
+   nul(null)
+
+
+   const typeZ = (name: string):never =>{
+       throw new Error(name)
+   }
+   typeZ('code is Err')
+
+
+
+
+
 
 
 
